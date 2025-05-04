@@ -1,0 +1,40 @@
+<style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      gap: 20px;
+      background: #eee;
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+  
+    .grid-fit {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 20px;
+      background: #ccc;
+      padding: 20px;
+    }
+  
+    .card {
+      background: lightblue;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+  
+  <h3>auto-fill (оставляет место под пустые колонки):</h3>
+  <div class="grid">
+    <div class="card">1</div>
+    <div class="card">2</div>
+  </div>
+  
+  <h3>auto-fit (сжимается под контент):</h3>
+  <div class="grid-fit">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+  </div>
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог с товарами и статьями о красоте и уходу за собой.</title>
+  <style>
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 100px 2fr 1fr; /* Три одинаковые колонки */
+      gap: 15px; /* Промежутки между элементами */
+      height: 100vh;
+    }
+
+    .item {
+      background-color: lightblue;
+      text-align: center;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Тут будет навигация по постам или рубрикам.</div>
+    <div class="item">Основной блок для статей.</div>
+    <div class="item">Опциональная колонка под рекламу.</div>
+  </div>
+</body>
+</html>
